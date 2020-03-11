@@ -1,0 +1,31 @@
+body{
+
+}
+@font-face {
+    font-family: "HelveticaNeueCyr-Light"; 
+    src: url(fonts/HelveticaNeueCyr-Light.otf) format("otf");
+    font-style: normal;
+}
+@font-face {
+    font-family: "HelveticaNeueCyr-Thin"; 
+    src: url(fonts/HelveticaNeueCyr-Thin.otf) format("otf");
+    font-style: normal;  
+}
+@font-face {
+    font-family: "HelveticaNeue"; 
+    src: url(fonts/HelveticaNeue.ttf) format("ttf");
+    font-weight: normal;
+    font-style: normal;  
+}
+.container{
+    max-width: 1110px;
+}
+#contacts{
+    background-color: #196AB3;
+    min-height: 40px;
+}
+#contacts ul li{
+    font-family: "HelveticaNeue";
+    display: inline;
+    color: white;
+}
