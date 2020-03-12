@@ -4,19 +4,227 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <title>Arsenal Kama</title>
 </head>
 <body>
     <div id="contacts">
         <div class="container">
-            <div class="row">
+            <div class="row align-items-center">
                 <ul>
-                    <li>Город: Москва</li>
-                    <li>mail@arsenal-kama.ru</li>
-                    <li>+7 (342) 287-50-90</li>
-                    <li>Заказать обратный звонок</li>
+                    <li id="city">Город: <u>Москва</u></li>
+                    <li id="mail">mail@arsenal-kama.ru</li>
+                    <li id="phone">+7 (342) 287-50-90</li>
+                    <li id="call">Заказать обратный звонок</li>
+                    <li id="reg"><button>Вход</button></li>
+                    <li>/</li>
+                    <li><button>Регистрация</button></li>
                 </ul>
+            </div>
+        </div>
+    </div>
+    <div id="nav">
+        <div class="container">
+            <div class="row align-items-center navigation">
+                <img src="img/logo.png">
+                <ul>
+                    <li id="catalog"><img src="img/hamburger.svg" id="hamburger"><a>Каталог</a></li>
+                    <li id="articles"><a>Статьи</a></li>
+                    <li id="info"><a>О компании</a></li>
+                    <li id="delivery"><a>Доставка</a></li>
+                    <li id="news"><a>Новости</a></li>
+                    <li><input type="search" name="search" placeholder="Поиск по сайту"></input></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div id="product">
+        <div class="container">
+            <div class="row justify-content-around">
+                <div class="col-md-6">
+                    <div class="hermetic">
+                        <h1>Герметик тиоколовый</h1>
+                        <p>У-30МЭС-5М фасовка 5,63 кг</p>
+                    </div>
+                    <div class="pad_top">
+                        <p id="price_size1" class="price">Цена:</p>
+                        <p id="price_size2" class="price">1 223 &#8381</p>
+                    </div>
+                    <div class="button_buy">
+                    <button class="buy_now">Купить сейчас</button>
+                    </div>
+                </div>
+                <div class="col-md-4 decor">
+                    <div class="hermetic_box">
+                        <img src="img/hermetic.png" alt="hermetic">
+                    </div>
+                    <div id="decoration_rechtangle1"></div>
+                    <div id="decoration_rechtangle2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="categories">
+        <div class="row">
+            <div class="col-md-6 chemistry">
+                <div class="chemistry_abs">
+                    <p class="prom_chem">Промышленная <br>
+                        химия</p>
+                    <img src="img/chemistry.svg" alt="">
+                </div>
+            </div>
+            <div class="col-md-6 paint">
+                <div class="paint_abs">
+                    <p>Лакокрасочные <br>
+                        материалы</p>
+                    <img src="img/paint.svg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="about_company">
+        <div class="container">
+            <div id="text1">
+                <h2>О компании</h2>
+                <img id="ellipse1" src="img/ellipse.svg" alt="">
+                <h3>Поставщик отечественных адгезивов для крупнейших кораблестроительных и промышленных предприятий.</h3>
+                <p>Предлагаем продукцию специального и строительного назначения, используемую в различных областях промышленности.</p>
+            </div>
+            <div id="text2">
+                <img id="ellipse2" src="img/ellipse.svg" alt="">
+                <p>Мы - официальный дистрибьютор:</p>
+                <img src="img/pzlm.svg" id="pzlm" alt="">
+                <img src="img/penta.svg" id="penta" alt="">
+            </div>
+            <div id="text3">
+                <img id="ellipse3" src="img/ellipse.svg" alt="">
+                <p id="text_start">ПКФ «Арсенал Кама» уже долгое время осуществляет поставки отечественных атгезивов, продукции специального и строительного назначения, а так же лакокрасочных материалов для всех сфер промышленности и строительства. </p>
+                <p>Наша компания сотрудничаем с ведущими предприятиями оборонного и промышленного комплекса Российской Федерации в состав, которого входят машиностроительные, кораблестроительные, авиационные заводы по всей территории Р.Ф. </p>
+                <p>Арсенал Кама предприятие входит в состав поставщиков РосАтома и РосГеологии.</p>
+                <p>Вся поставляемая продукция Производственно-коммерческой фирмой Арсенал Кама соответствует ГОСТ; ТУ; ОСТ; данный факт подтверждается паспортами качества и сертификатами соответствия на поставляемую продукцию.</p>
+                <p>Наши главные достоинства:</p>
+                <p>- Надежность, проверенная временем;</p> 
+                <p>- Сроки поставки;</p>
+                <p>- Широкий ассортимент товара в наличии на складах компании;</p>
+                <p>- Низкие цены;</p>
+                <p>- Контроль качество товара;</p>
+                <p>- Технологи и специалисты предприятия всегда готовы помочь в выборе и подбору материалов, которые подойдут для выполнения Ваших задач на производстве, помогут рассчитать необходимый объем продукции, сообщат сроки поставки в ваш регион.<br> 
+                <p>Арсенал Кама растет каждый день вместе с Вами. Наша команда всегда стремиться к улучшению своей работы, для максимального ускорения обработки Ваших заказов и облегчения поиска необходимых материалов.</p>
+                    
+                    
+                <p>Наша компания осуществляет комплексную поставку продуктов химии, химического сырья я предприятий России, СНГ.</p>
+            </div>
+        </div>
+    </div>
+    <div id="sertificates">
+        <div class="container">
+            <h2>Сертификаты</h2>
+            <img src="img/sert1.svg" id="sert1" alt="">
+            <img src="img/sert2.svg" id="sert2" alt="">
+        </div>
+    </div>
+    <div id="popular_products">
+        <div class="container">
+            <h2>Популярные товары</h2>
+            <div class="row row_marg">
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/norteks-s.svg" class="norteks-s" alt="">
+                        <h4>&laquoНортекс&#174-С&raquo</h4>
+                        <p class="about_p">«Нортекс-С» применяется для огнебиозащитной обработки: месовых текстильных...</p>
+                        <p class="price_p">1 601&#8381</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/vd-ak.svg" class="another_p" alt="">
+                        <h4>&laquoГрунтовка ВД-АК-040&raquo</h4>
+                        <p class="about_p">Адгезионная акриловая грунтовка с кварцевым наполнителем для слабо ...</p>
+                        <p class="price_p">41&#8381</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/anaterm-2u.svg" id="anaterm_2u" alt="">
+                        <h4>&laquoАнатерм-2У&raquo</h4>
+                        <p class="about_p">Описание товара вы можете найти на нашем сайте. Мы ответим на интересующие ...</p>
+                        <p class="price_p">9 604&#8381</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/norteks-s.svg" class="norteks-s" alt="">
+                        <h4>&laquoNortex&#174&raquo-Doctor для древесины-С</h4>
+                        <p class="about_p">Краска для обоев «НОРТ®» применяется для ...</p>
+                        <p class="price_p">1 601&#8381</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row row_marg">
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/pirilax_prime.svg" class="another_p" alt="">
+                        <h4>&laquoPirilax&#174&raquo-Prime для древесины</h4>
+                        <p class="about_p">«Нортекс-С» применяется для огнебиозащитной обработки: месовых текстильных...</p>
+                        <p class="price_p">245&#8381</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/nortex_lux.svg" class="another_p" alt="">
+                        <h4>&laquoNortex&#174&raquo-Lux для древесины</h4>
+                        <p class="about_p">Адгезионная акриловая грунтовка с кварцевым наполнителем для слабо ...</p>
+                        <p class="price_p">7 176&#8381</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/pirilax_classic.svg" class="another_p" alt="">
+                        <h4>&laquoPirilax&#174&raquo-Classic для <br>
+                            древесины</h4>
+                        <p class="about_p">Описание товара вы можете найти на нашем сайте ...</p>
+                        <p class="price_p">2 738&#8381</p>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="p_product">
+                        <img src="img/norteks-s.svg" class="norteks-s" alt="">
+                        <h4>&laquoPirilax&#174&raquo-Terma для <br>
+                            древесины</h4>
+                        <p class="about_p">Описание товара вы можете найти на нашем сайте. Мы ответим на интересующие ...</p>
+                        <p class="price_p" id="last_p">2 751&#8381</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <button>Посмотреть все товары</button>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h3>Навигация</h3>
+                    <a>Каталог</a>
+                    <a class="a_pad">Промышленная химия</a>
+                    <a class="a_pad">Лакокрасочные материалы</a>
+                    <a>Статьи</a>
+                    <a>О компании</a>
+                    <a id="a_marg">Доставка</a>
+                </div>
+                <div class="col-xl-3">
+                    <h3>Контакты</h3>
+                    <p>г. Пермь, <u>смотреть на карте</u></p>
+                    <p>+7 (342) 287-50-90</p>
+                    <p>mail@arsenal-kama.ru</p>
+                </div>
+                <div class="col-xl-6">
+                    <h3>Дополнительная информация</h3>
+                    <p>Обращаем Ваше внимание на то, что данный интернет-сайт носит исключительно информационный характер и ни при каких обстоятельствах не является публичной офертой, определяемой положением Статьи 437 (2) Гражданского кодекса РФ. Для получения подробной информации и стоимости товаров и услуг, пожалуйста обращайтесь к менеджерам компании по эл. почте mail@arsenal-kama.ru</p>
+                    <p>2014 &copy Все права защищены</p>
+                </div>
             </div>
         </div>
     </div>
