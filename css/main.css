@@ -1,92 +1,110 @@
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 body {
-	margin: 0;
+    margin: 0;
 }
 
-.container{
-	max-width: 1110px;
+.container {
+    max-width: 1110px;
 }
+
+
 /*КОНТАКТЫ*/
 
-#contacts{
+#contacts {
     background-color: #196AB3;
     min-height: 40px;
     border-bottom: 1px solid white;
 }
-#contacts ul{
+
+#contacts ul {
     font-family: 'Roboto';
     font-weight: 100;
     display: inline;
-	color: white;
-	padding-left: 15px;
+    color: white;
+    padding-left: 15px;
     margin: 0;
     line-height: 40px;
 }
-#contacts ul li{
+
+#contacts ul li {
     font-family: 'Roboto';
     font-weight: 100;
     font-size: 16px;
     display: inline;
     color: white;
 }
-#city{
+
+#city {
     padding-right: 25px;
 }
-#mail{
+
+#mail {
     padding-right: 25px;
 }
-#phone{
+
+#phone {
     padding-right: 25px;
 }
-#call{
+
+#call {
     text-decoration: underline;
 }
-#reg{
+
+#reg {
     padding-left: 260px;
 }
-#contacts ul li button{
+
+#contacts ul li button {
     color: white;
     background: transparent;
     border: none;
     padding: 0;
     font-weight: 100;
 }
-@media (max-width: 1200px){
-    #contacts{
-    display: none;
+
+@media (max-width: 1200px) {
+    #contacts {
+        display: none;
     }
 }
-@media (max-width:1000px){
-    #nav ul{
+
+@media (max-width:1000px) {
+    #nav ul {
         margin: 0 auto;
     }
-    #nav ul li input{
+    #nav ul li input {
         margin: 0 auto;
     }
 }
-@media (max-width:1100px){
-    #reg{
+
+@media (max-width:1100px) {
+    #reg {
         padding-left: 30px;
     }
 }
 
-/*МЕНЮ НАВИГАЦИЯ*/
-#navigation{
-	background-color: #196AB3;
-	box-shadow: 0px 4px 15px rgba(25, 106, 179, 0.6);
-}
-.nav-container {
-	display: flex;
-	align-items: center;
-	margin-left: auto;
-	margin-right: auto;
-	max-width: 1110px;
 
+/*МЕНЮ НАВИГАЦИЯ*/
+
+#navigation {
+    background-color: #196AB3;
+    box-shadow: 0px 4px 15px rgba(25, 106, 179, 0.6);
 }
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1110px;
+}
+
+
 /* Условие для экранов с шириной от 0 до 1200px */
+
 @media (max-width: 768px) {
     .nav-container {
         padding-left: 15px;
@@ -94,84 +112,97 @@ body {
     }
 }
 
+
 /* ------------ Desktop navigation ----------- */
-.logo{
-	padding: 6px 0 10px 0;
-}
-.nav {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-#hamburger{
-	margin-top: -7px;
-	padding-right: 7px;
-}
-#input__search{
-	background-image: url('../img/search.svg');
-	background-repeat: no-repeat;
-	background-position: 198px;
-	background-size: 17px;
-	margin-left: 0;
-	height: 50px;
-	width: 240px;
-	border: none;
-	border-radius: 5px;
-}
-::placeholder{
-	padding: 0 25px;
-	font-size: 22px;
-	font-family: 'Roboto';
-	font-weight: 300;
-	color: #196AB3;
+
+.logo {
+    padding: 6px 0 10px 0;
 }
 
+.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#hamburger {
+    margin-top: -7px;
+    padding-right: 7px;
+}
+
+#input__search {
+    background-image: url('../img/search.svg');
+    background-repeat: no-repeat;
+    background-position: 198px;
+    background-size: 17px;
+    margin-left: 0;
+    height: 50px;
+    width: 240px;
+    border: none;
+    border-radius: 5px;
+}
+
+.nav ::placeholder {
+    padding: 0 25px;
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 300;
+    color: #196AB3;
+}
+
+
 /* Условие для экранов с шириной от 0 до 1200px */
+
 @media (max-width: 1200px) {
     .nav {
-       display: none;
+        display: none;
     }
 }
 
 .nav__item {
-	margin-right: 30px;
+    margin-right: 30px;
 }
-.nav__item:last-child{
-	margin-right: 0;
+
+.nav__item:last-child {
+    margin-right: 0;
 }
+
 .nav__item:first-child {
-	margin-left: 45px;
+    margin-left: 45px;
 }
 
 .nav__link {
-	font-size: 22px;
+    font-size: 22px;
     font-family: 'Roboto';
     font-weight: 100;
     display: inline;
     color: white;
     padding-left: 0;
     margin: 0;
-	line-height: 40px;
-	text-decoration: none;
+    line-height: 40px;
+    text-decoration: none;
 }
 
 .nav__link:hover {
-	color: #ffd600;
+    color: #ffd600;
 }
+
 
 /* --------------- Mobile navigation button ----------- */
 
 .menu-icon {
     z-index: 19;
-	position: relative;
+    position: relative;
     display: none;
-	width: 30px;
+    width: 30px;
     height: 30px;
     cursor: pointer;
 }
 
+
 /* Условие для экранов с шириной от 0 до 1200px */
+
 @media (max-width: 1200px) {
     .menu-icon {
         display: flex;
@@ -181,48 +212,48 @@ body {
 }
 
 .menu-icon-line {
-	position: relative;
-	width: 30px;
-	height: 5px;
-	background-color: #fff;
+    position: relative;
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
 }
 
 .menu-icon-line::before {
-	position: absolute;
-	left: 0;
-	top: -10px;
-	content: '';
-	width: 30px;
-	height: 5px;
-	background-color: #fff;
-	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
 .menu-icon-line::after {
-	position: absolute;
-	left: 0;
-	top: 10px;
-	content: '';
-	width: 30px;
-	height: 5px;
-	background-color: #fff;
-	transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    content: '';
+    width: 30px;
+    height: 5px;
+    background-color: #fff;
+    transition: transform 0.2s ease-in, top 0.2s linear 0.2s;
 }
 
 .menu-icon.menu-icon-active .menu-icon-line {
-	background-color: transparent;
+    background-color: transparent;
 }
 
 .menu-icon.menu-icon-active .menu-icon-line::before {
-	transform: rotate(45deg);
-	top: 0;
-	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transform: rotate(45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
 .menu-icon.menu-icon-active .menu-icon-line::after {
-	transform: rotate(-45deg);
-	top: 0;
-	transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
+    transform: rotate(-45deg);
+    top: 0;
+    transition: top 0.2s linear, transform 0.2s ease-in 0.2s;
 }
 
 
@@ -238,10 +269,12 @@ body {
     width: 350px;
     padding: 50px;
     background-color: rgba(25, 106, 179, 0.7);
-	transition: transform 0.4s ease-in;
+    transition: transform 0.4s ease-in;
 }
 
+
 /* Условие для экранов с шириной от 0 до 1200px */
+
 @media (max-width: 768px) {
     .mobile-nav {
         width: 320px;
@@ -254,7 +287,7 @@ body {
 }
 
 .mobile-nav__title {
-	font-size: 22px;
+    font-size: 22px;
     font-family: 'Roboto';
     font-weight: 400;
     margin-bottom: 30px;
@@ -274,7 +307,7 @@ body {
 .mobile-nav__link {
     color: #fff;
     text-decoration: none;
-	font-size: 22px;
+    font-size: 22px;
     font-family: 'Roboto';
     font-weight: 100;
     display: inline;
@@ -284,32 +317,35 @@ body {
     color: #ffd600;
 }
 
-.mobile-nav__contacts{
+.mobile-nav__contacts {
     color: #fff;
-	font-size: 16px;
+    font-size: 16px;
     font-family: 'Roboto';
-	font-weight: 100;
-	text-decoration: none;
-	padding: 0;
-	list-style-type: none;
-	line-height: 2em;
+    font-weight: 100;
+    text-decoration: none;
+    padding: 0;
+    list-style-type: none;
+    line-height: 2em;
 }
 
-.mobile-nav__contacts button{
-	font-size: 22px;
-	border: 1px solid white;
-	border-radius: 5px;
-	margin: 5px 0 5px 0;
-	padding: 10px 10px 10px 10px;
-	background: transparent;
-	color: white;
+.mobile-nav__contacts button {
+    font-size: 22px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 5px 0 5px 0;
+    padding: 10px 10px 10px 10px;
+    background: transparent;
+    color: white;
 }
-.mobile-nav__contacts button:hover{
-	background-color: #ffd600;
+
+.mobile-nav__contacts button:hover {
+    background-color: #ffd600;
 }
+
 
 /*Герметик тиоколовый*/
-#product h1{
+
+#product h1 {
     padding: 70px 0 0 13px;
     font-size: 40px;
     font-family: 'Roboto';
@@ -317,31 +353,38 @@ body {
     text-transform: uppercase;
     color: #196AB3;
 }
-.price{
+
+.price {
     display: inline;
 }
-#product .hermetic p{
+
+#product .hermetic p {
     padding: 5px 0 0 15px;
     font-size: 22px;
     font-family: 'Roboto';
     font-weight: 300;
     color: #172645;
 }
-.pad_top{
+
+.pad_top {
     padding-top: 18px;
     padding-left: 15px;
 }
-#price_size1{
+
+#price_size1 {
     font-size: 22px;
 }
-#price_size2{
+
+#price_size2 {
     font-size: 40px;
     color: #196AB3;
 }
-#popular_products a:hover{
-	text-decoration: none;
+
+#popular_products a:hover {
+    text-decoration: none;
 }
-.buy_now{
+
+.buy_now {
     margin: 10px 0 0 15px;
     background: transparent;
     border: 1px solid #196AB3;
@@ -353,12 +396,13 @@ body {
     color: #196AB3;
     text-transform: uppercase;
 }
-.buy_now:hover{
-	background: #196AB3;
-	color: white;
+
+.buy_now:hover {
+    background: #196AB3;
+    color: white;
 }
 
-.hermetic_box{
+.hermetic_box {
     width: 262px;
     height: 262px;
     background: #FFFFFF;
@@ -368,178 +412,191 @@ body {
     margin-right: 50px;
     right: 0;
 }
-.hermetic_box img{
+
+.hermetic_box img {
     padding-left: 53px;
 }
 
-#decoration_rechtangle1{
+#decoration_rechtangle1 {
     margin-left: -215px;
     margin-top: 190px;
     width: 402px;
     height: 206px;
     border: 1px solid #196AB3;
 }
-#decoration_rechtangle2{
+
+#decoration_rechtangle2 {
     margin-top: 27px;
     margin-left: 195px;
     width: 187px;
     height: 146px;
     border: 1px solid #5F4F86;
 }
-@media (min-width:700px){
-    .button_buy{
+
+@media (min-width:700px) {
+    .button_buy {
         margin-bottom: 50px;
     }
 }
-@media (min-width:800px){
-    .decor{
+
+@media (min-width:800px) {
+    .decor {
         position: relative;
     }
-    .hermetic_box{
+    .hermetic_box {
         z-index: 3;
         position: absolute;
     }
-    #decoration_rechtangle1{
+    #decoration_rechtangle1 {
         z-index: 1;
         position: absolute;
     }
-    #decoration_rechtangle2{
+    #decoration_rechtangle2 {
         z-index: 2;
         position: absolute;
     }
-    .buy_now{
+    .buy_now {
         margin-bottom: 35px;
     }
 }
-@media (max-width:800px){
-    .hermetic_box{
+
+@media (max-width:800px) {
+    .hermetic_box {
         margin: 0 auto;
         margin-top: 50px;
         margin-bottom: 50px;
     }
-    #product h1{
+    #product h1 {
         text-align: center;
     }
-    .buy_now{
+    .buy_now {
         display: block;
         margin: 0 auto;
     }
-    #product p{
+    #product p {
         text-align: center;
     }
-    .price{
+    .price {
         display: block;
         text-align: center;
     }
-    #price_size1{
+    #price_size1 {
         margin-bottom: 0;
     }
 }
-@media (min-width:1000px){
-    .decor{
+
+@media (min-width:1000px) {
+    .decor {
         position: relative;
     }
-    #decoration_rechtangle1{
+    #decoration_rechtangle1 {
         position: absolute;
     }
-    #decoration_rechtangle1{
+    #decoration_rechtangle1 {
         position: absolute;
     }
 }
-@media (max-width:1000px){
-    #decoration_rechtangle1{
+
+@media (max-width:1000px) {
+    #decoration_rechtangle1 {
         display: none;
     }
-    #decoration_rechtangle2{
+    #decoration_rechtangle2 {
         display: none;
     }
 }
 
 
 /*Категории*/
-.chemistry{
-	position: relative;
-	padding: 0;
-	height: 120px;
-}
-.paint{
-	position: relative;
-	padding: 0;
-	height: 120px;
-}
-.chemistry__button{
 
-	width: 100%;
-	height: 100%;
-	background-color: #8CC9FF;
-	border: none;
-}
-.paint__button{
-
-	width: 100%;
-	height: 100%;
-	background-color: #196AB3;
-	border: none;
-}
-.chemistry__button:hover{
-	background-color:#ffd600;
-}
-.paint__button:hover{
-	background-color:#ffd600;
+.chemistry {
+    position: relative;
+    padding: 0;
+    height: 120px;
 }
 
-.chemistry_abs p{
+.paint {
+    position: relative;
+    padding: 0;
+    height: 120px;
+}
+
+.chemistry__button {
+    width: 100%;
+    height: 100%;
+    background-color: #8CC9FF;
+    border: none;
+}
+
+.paint__button {
+    width: 100%;
+    height: 100%;
+    background-color: #196AB3;
+    border: none;
+}
+
+.chemistry__button:hover {
+    background-color: #ffd600;
+}
+
+.paint__button:hover {
+    background-color: #ffd600;
+}
+
+.chemistry_abs p {
     float: left;
     font-size: 22px;
     font-family: 'Roboto';
-	font-weight: 400;
-	padding-top: 30px;
-	padding-right: 60px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-right: 60px;
     color: #172645;
     text-transform: uppercase;
     line-height: 1em;
 }
 
-.paint_abs p{
+.paint_abs p {
     float: left;
     font-size: 22px;
     font-family: 'Roboto';
-	font-weight: 400;
-	padding-top: 30px;
-	padding-right: 60px;
+    font-weight: 400;
+    padding-top: 30px;
+    padding-right: 60px;
     color: white;
     text-transform: uppercase;
     line-height: 1em;
 }
-@media (max-width:1100px){
-	.chemistry_abs{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
-	.paint_abs{
-		display: flex;
-		justify-content: center;
-		align-items: center;
-	}
+
+@media (max-width:1100px) {
+    .chemistry_abs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .paint_abs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }
-@media (min-width:1100px){
-	.chemistry_abs{
-		position: absolute;
-		right: 130px;
-		top: 13px;
-	}
-	.paint_abs{
-		position: absolute;
-		left: 130px;
-		top: 13px;
-	}
+
+@media (min-width:1100px) {
+    .chemistry_abs {
+        position: absolute;
+        right: 130px;
+        top: 13px;
+    }
+    .paint_abs {
+        position: absolute;
+        left: 130px;
+        top: 13px;
+    }
 }
 
 
 /*О компании*/
 
-#about_company h2{
+#about_company h2 {
     margin: 50px 0 0 0px;
     font-size: 40px;
     font-family: 'Roboto';
@@ -547,29 +604,34 @@ body {
     text-transform: uppercase;
     color: #172645;
 }
-#ellipse1{
+
+#ellipse1 {
     margin: 10px 10px 0 0px;
     float: left;
 }
-#text1 h3{
+
+#text1 h3 {
     margin: 15px 0 0 20px;
     font-size: 22px;
     font-family: 'Roboto';
     font-weight: 400;
     color: #172645;
 }
-#text1 p{
+
+#text1 p {
     margin: 0 0 0 20px;
     font-size: 16px;
     font-family: 'Roboto';
     font-weight: 300;
     color: #172645;
 }
-#ellipse2{
+
+#ellipse2 {
     margin: 0 10px 0 0px;
     float: left;
 }
-#text2 p{
+
+#text2 p {
     margin: 15px 0 0 20px;
     padding-top: 5px;
     font-size: 16px;
@@ -577,18 +639,22 @@ body {
     font-weight: 300;
     color: #172645;
 }
-#pzlm{
+
+#pzlm {
     margin: 22px 27px 0 0;
 }
-#penta{
+
+#penta {
     margin-top: 30px;
 }
-#ellipse3{
+
+#ellipse3 {
     margin: 10px 10px 0 0px;
     float: left;
 }
-#text3 p{
-    text-indent:3em;
+
+#text3 p {
+    text-indent: 3em;
     margin: 15px 0 0 20px;
     font-size: 16px;
     font-family: 'Roboto';
@@ -596,14 +662,16 @@ body {
     color: #172645;
     line-height: 1em;
 }
-#text_start{
+
+#text_start {
     text-indent: 0 !important;
     padding-top: 15px;
 }
 
 
 /*Сертификаты*/
-#sertificates h2{
+
+#sertificates h2 {
     margin: 50px 0 0 0px;
     font-size: 40px;
     font-family: 'Roboto';
@@ -611,13 +679,16 @@ body {
     text-transform: uppercase;
     color: #172645;
 }
-#sert1{
+
+#sert1 {
     display: inline;
     margin: 25px 50px 0 0;
 }
 
+
 /*Популярные продукты*/
-#popular_products h2{
+
+#popular_products h2 {
     margin: 70px 0 0 0px;
     font-size: 40px;
     font-family: 'Roboto';
@@ -625,7 +696,8 @@ body {
     text-transform: uppercase;
     color: #172645;
 }
-.p_product{
+
+.p_product {
     margin-top: 20px;
     margin-right: 5px;
     width: 260px;
@@ -634,29 +706,36 @@ body {
     box-shadow: 0px 0px 15px rgba(37, 23, 69, 0.15);
     border-radius: 5px;
 }
-.p_product:hover{
-	background: #8CC9FF;
+
+.p_product:hover {
+    background: #8CC9FF;
 }
-.row_marg{
+
+.row_marg {
     margin-top: 25px;
 }
-.norteks-s{
+
+.norteks-s {
     margin: 15px 0 0 40px;
 }
-#anaterm_2u{
+
+#anaterm_2u {
     width: 260px;
 }
-.another_p{
+
+.another_p {
     margin: 15px 0 0 40px;
 }
-#popular_products .p_product h4{
+
+#popular_products .p_product h4 {
     margin: 13px 0 0 15px;
     font-size: 16px;
     font-family: 'Roboto';
     font-weight: 300;
     color: #172645;
 }
-.about_p{
+
+.about_p {
     margin: 10px 0 0 15px;
     font-size: 16px;
     font-family: 'Roboto';
@@ -664,17 +743,20 @@ body {
     color: #8C8C8C;
     line-height: 1em;
 }
-.price_p{
+
+.price_p {
     margin: 25px 0 0 15px;
     font-size: 22px;
     font-family: 'Roboto';
     font-weight: 400;
     color: #196AB3;
 }
-#last_p{
+
+#last_p {
     margin: 10px 0 0 15px !important;
 }
-#popular_products button{
+
+#popular_products button {
     margin: 0 auto;
     margin-top: 35px;
     margin-bottom: 60px;
@@ -689,17 +771,20 @@ body {
     background: transparent;
     text-transform: uppercase;
 }
-#popular_products button:hover{
-	background: #196AB3;
-	color: white;
+
+#popular_products button:hover {
+    background: #196AB3;
+    color: white;
 }
 
 
 /*Футер*/
-#footer{
+
+#footer {
     background-color: #196AB3;
 }
-#footer h3{
+
+#footer h3 {
     text-transform: uppercase;
     margin-top: 70px;
     font-size: 22px;
@@ -707,7 +792,8 @@ body {
     font-weight: 300;
     color: #8CC9FF;
 }
-#footer a{
+
+#footer a {
     margin-top: 20px;
     display: block;
     font-size: 16px;
@@ -716,7 +802,8 @@ body {
     color: white;
     line-height: 0.8em;
 }
-#footer p{
+
+#footer p {
     margin-top: 20px;
     font-size: 16px;
     font-family: 'Roboto';
@@ -724,17 +811,157 @@ body {
     color: white;
     line-height: 1em;
 }
-#footer .a_pad{
+
+#footer .a_pad {
     padding-left: 30px !important;
 }
-#a_marg{
+
+#a_marg {
     margin-bottom: 50px;
 }
-@media (max-width:1200px){
-	.navigation__hidden{
-		display: none;
-	}
-	#footer h3{
-		margin-top: 25px;
-	}
+
+@media (max-width:1200px) {
+    .navigation__hidden {
+        display: none;
+    }
+    #footer h3 {
+        margin-top: 25px;
+    }
+}
+
+
+/*CHAT*/
+
+#chat h2 {
+    margin-top: 45px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #172645
+}
+
+#chat__window {
+    border: solid 1px #8CC9FF;
+    max-width: 1110px;
+    border-radius: 5px;
+}
+
+.chat__header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    background: #8CC9FF;
+    height: 47px;
+    width: 100%;
+}
+.chat__header p{
+    font-size: 22px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #172645
+}
+.chat__mesages{
+    position: relative;
+}
+.message__right{
+    margin-top: 75px;
+    display: flex;
+    justify-content: flex-end;
+}
+.message__right p{
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    max-width: 540px;
+    padding: 15px 10px 10px 10px;
+    border-radius: 15px 0 15px 15px;
+    border: solid 1px #196AB3;
+    margin: 0;
+    margin-top: 35px;
+}
+.message__avatar{
+    margin: 0 15px 0 15px;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+}
+.message__left{
+    margin-top: 75px;
+    display: flex;
+    justify-content: flex-start;
+}
+.message__left p{
+    font-family: 'Roboto';
+    font-weight: 400;
+    max-width: 540px;
+    max-width: 540px;
+    padding: 15px 10px 10px 10px;
+    border-radius: 0 15px 15px 15px;
+    background: #196AB3;
+    color: white;
+    margin: 0;
+    margin-top: 35px;
+}
+.message__left .message__avatar{
+    background: url('../img/avatar.svg');
+    border: solid 1px #8CC9FF;
+    border-radius: 100%;
+    margin: 0 15px 0 15px;
+    height: 64px;
+    width: 64px;
+    border-radius: 100%;
+    background-color: #C4C4C4;
+}
+.chat__input{
+    margin: 75px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#message{
+    padding-left: 30px;
+    height: 42px;
+    max-width: 858px;
+    border: 1px solid #8CC9FF;
+    background: transparent;
+    border-radius: 5px;
+}
+
+#file {
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background: url('../img/clip.svg') center center no-repeat;
+    background-color: #8CC9FF;
+    margin: 0 15px 0 15px;
+}
+#send{
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+    height: 42px;
+    width: 152px;
+    background-color: #196AB3;
+    border: none;
+    border-radius: 5px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    text-transform: uppercase;
+    color: white;
+}
+#file ::placeholder{
+    font-size: 16px;
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #8C8C8C;
+}
+.chat__input form{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
