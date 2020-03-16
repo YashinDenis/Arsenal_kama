@@ -95,6 +95,7 @@ body {
 }
 
 .nav-container {
+    justify-content: space-between;
     display: flex;
     align-items: center;
     margin-left: auto;
@@ -114,7 +115,9 @@ body {
 
 
 /* ------------ Desktop navigation ----------- */
-
+.nav__item:first-child {
+    margin-left: 45px;
+}
 .logo {
     padding: 6px 0 10px 0;
 }
@@ -141,9 +144,6 @@ body {
     width: 240px;
     border: none;
     border-radius: 5px;
-}
-
-.nav ::placeholder {
     padding: 0 25px;
     font-size: 22px;
     font-family: 'Roboto';
@@ -151,10 +151,9 @@ body {
     color: #196AB3;
 }
 
-
 /* Условие для экранов с шириной от 0 до 1200px */
 
-@media (max-width: 1200px) {
+@media (max-width: 760px) {
     .nav {
         display: none;
     }
@@ -167,9 +166,8 @@ body {
 .nav__item:last-child {
     margin-right: 0;
 }
-
 .nav__item:first-child {
-    margin-left: 45px;
+margin-left: 0;
 }
 
 .nav__link {
@@ -203,7 +201,7 @@ body {
 
 /* Условие для экранов с шириной от 0 до 1200px */
 
-@media (max-width: 1200px) {
+@media (max-width: 760px) {
     .menu-icon {
         display: flex;
         justify-content: center;
@@ -262,7 +260,7 @@ body {
 .mobile-nav {
     z-index: 9;
     display: block;
-    position: absolute;
+    position: fixed;
     right: -350px;
     top: 0;
     height: 100vh;
@@ -857,21 +855,25 @@ body {
     height: 47px;
     width: 100%;
 }
-.chat__header p{
+
+.chat__header p {
     font-size: 22px;
     font-family: 'Roboto';
     font-weight: 400;
     color: #172645
 }
-.chat__mesages{
+
+.chat__mesages {
     position: relative;
 }
-.message__right{
+
+.message__right {
     margin-top: 75px;
     display: flex;
     justify-content: flex-end;
 }
-.message__right p{
+
+.message__right p {
     font-size: 16px;
     font-family: 'Roboto';
     font-weight: 400;
@@ -882,19 +884,22 @@ body {
     margin: 0;
     margin-top: 35px;
 }
-.message__avatar{
+
+.message__avatar {
     margin: 0 15px 0 15px;
     height: 64px;
     width: 64px;
     border-radius: 100%;
     background-color: #C4C4C4;
 }
-.message__left{
+
+.message__left {
     margin-top: 75px;
     display: flex;
     justify-content: flex-start;
 }
-.message__left p{
+
+.message__left p {
     font-family: 'Roboto';
     font-weight: 400;
     max-width: 540px;
@@ -906,23 +911,25 @@ body {
     margin: 0;
     margin-top: 35px;
 }
-.message__left .message__avatar{
-    background: url('../img/avatar.svg');
-    border: solid 1px #8CC9FF;
+
+.message__left .message__avatar {
     border-radius: 100%;
     margin: 0 15px 0 15px;
     height: 64px;
     width: 64px;
     border-radius: 100%;
-    background-color: #C4C4C4;
 }
-.chat__input{
+
+.chat__input {
     margin: 75px 15px 15px;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-#message{
+
+#message {
+    display: flex;
+    flex: auto;
     padding-left: 30px;
     height: 42px;
     max-width: 858px;
@@ -931,16 +938,10 @@ body {
     border-radius: 5px;
 }
 
-#file {
-    width: 42px;
-    height: 42px;
-    border: none;
-    border-radius: 5px;
-    background: url('../img/clip.svg') center center no-repeat;
-    background-color: #8CC9FF;
-    margin: 0 15px 0 15px;
-}
-#send{
+#send {
+    padding-left: 30px;
+    display: flex;
+    flex: 0 0 152px;
     font-family: 'Roboto';
     font-weight: 400;
     text-transform: uppercase;
@@ -954,14 +955,50 @@ body {
     text-transform: uppercase;
     color: white;
 }
-#file ::placeholder{
+
+#send:hover {
+    background-color: #8CC9FF;
+}
+
+#file ::placeholder {
     font-size: 16px;
     font-family: 'Roboto';
     font-weight: 400;
     color: #8C8C8C;
 }
-.chat__input form{
+
+.hide {
+    position: absolute;
+    overflow: hidden;
+    z-index: -1;
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+}
+
+label {
+    display: flex;
+    flex: 0 0 42px;
+    width: 42px;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    background: url('../img/clip.svg') center center no-repeat;
+    background-color: #8CC9FF;
+    margin: 0 15px 0 15px;
+}
+
+label:hover {
+    background-color: #196AB3;
+}
+
+.chat__input form {
     display: flex;
     justify-content: center;
     width: 100%;
 }
+
+
+/*Кастомизация инпут файл
+
+*/
