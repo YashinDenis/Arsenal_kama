@@ -183,7 +183,7 @@ margin-left: 0;
 }
 
 .nav__link:hover {
-    color: #ffd600;
+    color: white;
 }
 
 
@@ -289,7 +289,7 @@ margin-left: 0;
     font-family: 'Roboto';
     font-weight: 400;
     margin-bottom: 30px;
-    color: #f6d142;
+    color: white;
 }
 
 .mobile-nav__list {
@@ -312,7 +312,7 @@ margin-left: 0;
 }
 
 .mobile-nav__link:hover {
-    color: #ffd600;
+    color: white;
 }
 
 .mobile-nav__contacts {
@@ -337,7 +337,7 @@ margin-left: 0;
 }
 
 .mobile-nav__contacts button:hover {
-    background-color: #ffd600;
+    background-color: #196AB3;
 }
 
 
@@ -534,11 +534,11 @@ margin-left: 0;
 }
 
 .chemistry__button:hover {
-    background-color: #ffd600;
+    background-color: #4fa146;
 }
 
 .paint__button:hover {
-    background-color: #ffd600;
+    background-color: #4fa146;
 }
 
 .chemistry_abs p {
